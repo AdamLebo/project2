@@ -1,1 +1,32 @@
-<h1>{{Cars R Us}}</h1>
+<h1>Cars R Us</h1>
+{{!-- {{#if loggedIn}} --}}
+<div>
+  <label for="yearDropdown">Year:</label>
+  <select id="yearDropdown" name="yearDropdown" class="form-control">
+    {{#each years}}
+      <option value="{{this.value}}">{{this.label}}</option>
+    {{/each}}
+  </select>
+  <label for="makeDropdown">Make:</label>
+  <select id="makeDropdown" name="makeDropdown" class="form-control">
+    {{#each makes}}
+      <option value="{{this.value}}">{{this.label}}</option>
+    {{/each}}
+  </select>
+  <label for="modelDropdown">Model:</label>
+  <select id="modelDropdown" name="modelDropdown" class="form-control">
+    {{#each models}}
+      <option value="{{this.value}}">{{this.label}}</option>
+    {{/each}}
+  </select>
+  <label for="colorDropdown">Color:</label>
+  <select id="colorDropdown" name="colorDropdown" class="form-control">
+    {{#each colors}}
+      <option value="{{this.value}}">{{this.label}}</option>
+    {{/each}}
+  </select>
+</div>
+{{!-- {{else}} --}}
+<a href="/login">You must be logged in to view the listings</a>
+
+<script src="/Develop/public/js/dropdown.js"></script>
