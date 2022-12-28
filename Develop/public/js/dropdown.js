@@ -1,5 +1,3 @@
-var template = Handlebars.compile($('#myTemplate').html());
-
 var data = {
   years: [
     { value: '2020', label: '2020' },
@@ -31,4 +29,6 @@ var data = {
   ]
 };
 
-$('#targetElement').html(template(data));
+module.exports = {
+  data
+}
