@@ -1,29 +1,29 @@
 var data = {
   years: [
-    { value: '2020', label: '2020' },
-    { value: '2021', label: '2021' },
+    { value: '2016', label: '2016' },
     { value: '2022', label: '2022' },
-    { value: '2023', label: '2023' },
-    { value: '2024', label: '2024' }
+    { value: '2013', label: '2013' },
+    { value: '2017', label: '2017' },
+    { value: '2019', label: '2019' }
   ],
   makes: [
-    { value: 'honda', label: 'Honda' },
-    { value: 'toyota', label: 'Toyota' },
+    { value: 'dodge', label: 'Dodge' },
+    { value: 'kia', label: 'Kia' },
     { value: 'ford', label: 'Ford' },
-    { value: 'chevrolet', label: 'Chevrolet' },
-    { value: 'tesla', label: 'Tesla' }
+    { value: 'chevy', label: 'Chevy' },
+    { value: 'mercedes-benz', label: 'Mercedes-Benz' }
   ],
   models: [
-    { value: 'accord', label: 'Accord' },
-    { value: 'corolla', label: 'Corolla' },
-    { value: 'mustang', label: 'Mustang' },
-    { value: 'camaro', label: 'Camaro' },
-    { value: 'model 3', label: 'Model 3' }
+    { value: 'challenger', label: 'Challenger' },
+    { value: 'forte', label: 'Forte' },
+    { value: 'focus', label: 'Focus' },
+    { value: 'impala', label: 'Impala' },
+    { value: 'sprinter', label: 'Sprinter' }
   ],
   colors: [
     { value: 'red', label: 'Red' },
-    { value: 'blue', label: 'Blue' },
-    { value: 'green', label: 'Green' },
+    { value: 'metallic grey', label: 'Metallic Grey' },
+    { value: 'yellow', label: 'Yellow' },
     { value: 'black', label: 'Black' },
     { value: 'white', label: 'White' }
   ]
