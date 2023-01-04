@@ -20,7 +20,7 @@ app.engine("handlebars", hbs.engine)
 app.set('view engine', 'handlebars');
 
 //get file for homepage
-app.get('/', (req, res) => {
+app.get('', (req, res) => {
     res.render("homepage", data)
 });
 
