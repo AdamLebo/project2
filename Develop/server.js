@@ -7,7 +7,7 @@ const { data } = require('./public/js/dropdown');
 
 const PORT = 3001;
 const app = express();
-const listingData = require("./public/js/listing.js")
+const {listingData} = require("./public/js/listing.js")
 //middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -21,7 +21,9 @@ app.set('view engine', 'handlebars');
 
 //get file for homepage
 app.get('', (req, res) => {
-    res.render("homepage", data)
+    res.render("homepage", {
+        ...data, listData: listingData.listData, isLoggedIn: true
+    })
 });
 
 //get file for login page
