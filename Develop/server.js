@@ -7,7 +7,7 @@ const { data } = require('./public/js/dropdown');
 
 const PORT = 3001;
 const app = express();
-
+const listingData = require("./public/js/listing.js")
 //middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -29,7 +29,11 @@ app.get('/login', (req, res) => {
     res.render("login", {})
 });
 
-//NEW***
+app.get('/list', (req, res) => {
+    res.render("list", listingData)
+  });
+
+  //NEW***
 //Attempt to work on routes to  
 //display car listings grabbed the values
 //from Adam's array.
