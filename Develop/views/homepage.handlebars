@@ -2,25 +2,25 @@
 {{!-- {{#if loggedIn}} --}}
 <div>
   <label for="yearDropdown">Year:</label>
-  <select id="yearDropdown" name="yearDropdown" class="form-control">
+  <select id="yearDropdown" name="yearDropdown" class="col-2">
     {{#each years}}
       <option value="{{this.value}}">{{this.label}}</option>
     {{/each}}
   </select>
   <label for="makeDropdown">Make:</label>
-  <select id="makeDropdown" name="makeDropdown" class="form-control">
+  <select id="makeDropdown" name="makeDropdown" class="col-2">
     {{#each makes}}
       <option value="{{this.value}}">{{this.label}}</option>
     {{/each}}
   </select>
   <label for="modelDropdown">Model:</label>
-  <select id="modelDropdown" name="modelDropdown" class="form-control">
+  <select id="modelDropdown" name="modelDropdown" class="col-2">
     {{#each models}}
       <option value="{{this.value}}">{{this.label}}</option>
     {{/each}}
   </select>
   <label for="colorDropdown">Color:</label>
-  <select id="colorDropdown" name="colorDropdown" class="form-control">
+  <select id="colorDropdown" name="colorDropdown" class="col-2">
     {{#each colors}}
       <option value="{{this.value}}">{{this.label}}</option>
     {{/each}}
