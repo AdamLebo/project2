@@ -7,8 +7,13 @@ router.get('/', async (req, res) => {
         const dbCarData = await Car.findAll({
             include: [
                 {
-                    model: User,
-                    attributes: ["id", "username", "email"],
+                    model: Car,
+                    attributes: ['id', 
+                                'year', 
+                                'make', 
+                                'model', 
+                                'color',
+                    ],
                 },
             ],
         });
