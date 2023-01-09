@@ -1,5 +1,5 @@
 <h1>Cars R Us</h1>
-{{!-- {{#if loggedIn}} --}}
+{{#if loggedIn}}
 <div>
   <label for="yearDropdown">Year:</label>
   <select id="yearDropdown" name="yearDropdown" class="col-2">
@@ -26,9 +26,7 @@
     {{/each}}
   </select>
 </div>
-{{!-- {{else}} --}}
-
-<a href="http://localhost:3001/login">You must be logged in to view the listings</a>
 {{> list}}
-
-<script src="/Develop/public/js/dropdown.js"></script>
+{{else}}
+<a href="http://localhost:3001/login">You must be logged in to view the listings</a>
+{{/if}}
