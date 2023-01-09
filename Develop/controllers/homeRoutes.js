@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User, Car } = require('../models');
+const {listingData} = require("../public/js/listing")
 
 //get all cars for homepage
 router.get('/', async (req, res) => {
@@ -15,6 +16,7 @@ router.get('/', async (req, res) => {
         const cars = dbCarData.map((car) => car.get({ plain: true }));
         res.render('homepage', {
             cars,
+            listData: listingData.listData,
             loggedIn: req.session.loggedIn,
         });
     } catch (err) {
