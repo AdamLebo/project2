@@ -7,6 +7,7 @@ var listingData = {
       {color: "White", model: "Sprinter", year: "2019", make: "Mercedes-Benz", image: '/images/white benz.jpeg'}
 ]};
 
+
 module.exports = { 
   listingData
 }
