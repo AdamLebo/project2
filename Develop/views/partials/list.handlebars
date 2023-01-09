@@ -2,7 +2,7 @@
     <div class="row row-cols-3 g-5">
         {{#each listData}}
             <div class="col border bg-light">
-                <img style="width: 250px;" class="card-img-top" src="https://via.placeholder.com/600x400" alt="" />
+                <img style="width: 250px;" class="card-img-top" src="{{this.image}}" alt="" />
                 <div> Color: {{this.color}}</div>
                 <div>Model: {{this.model}}</div>
                 <div>Make: {{this.make}}</div>
@@ -13,3 +13,5 @@
 </div>
 
 <script src="/js/listingHandlers.js"></script>
+
+<!--"https://via.placeholder.com/600x400"-->
