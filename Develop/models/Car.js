@@ -12,6 +12,7 @@ Car.init(
     {
         id: {
             type: DataTypes.INTEGER,
+            primaryKey: true,
             allowNull: false,
             autoIncrement: true,
         },
@@ -35,5 +36,14 @@ Car.init(
             type: DataTypes.STRING,
             allowNull: false,
         }
+    },
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'car'
     }
-)
+);
+
+module.exports = Car
