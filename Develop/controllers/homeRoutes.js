@@ -18,6 +18,7 @@ router.get('/', async (req, res) => {
             cars,
             listData: listingData.listData,
             loggedIn: req.session.loggedIn,
+            listData: listingData.listData,
         });
     } catch (err) {
         console.log(err);
