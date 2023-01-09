@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User, Car } = require('../../models');
 
 //create new user
 router.post('/', async (req, res) => {
@@ -20,6 +20,21 @@ router.post('/', async (req, res) => {
         res.status(400).json(err);
     }
 });
+
+//create new car
+router.post('/sell', async (req, res) => {
+    try{
+        const dbCarData = await Car.create({
+            make: req.body.make,
+            model: req.body.model,
+            year: req.body.year,
+
+        })
+    } catch (err) {
+        console.log(err);
+        res.status(400).json(err);
+    }
+})
 
 //login
 router.post('/login', async (req, res) => {

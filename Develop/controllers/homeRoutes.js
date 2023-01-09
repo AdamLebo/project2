@@ -7,12 +7,9 @@ router.get('/', async (req, res) => {
         const dbCarData = await Car.findAll({
             include: [
                 {
-                    model: Car,
+                    model: User,
                     attributes: ['id', 
-                                'year', 
-                                'make', 
-                                'model', 
-                                'color',
+                                'email',
                     ],
                 },
             ],
@@ -30,20 +27,7 @@ router.get('/', async (req, res) => {
 
 router.get('/cars/:id', async (req, res) => {
     try{
-        const dbCarData = await Car.findByPk(req.params.id, {
-            include: [
-                {
-                    model: Car,
-                    attributes: [
-                        'id',
-                        'year',
-                        'make',
-                        'model',
-                        'color',
-                    ],
-                },
-            ]
-        })
+        const dbCarData = await Car.findByPk(req.params.id)
 
         const car = dbCarData.get({ plain: true });
         res.render('listing-details', { car, loggedIn: req.session.loggedIn });
