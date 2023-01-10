@@ -9,6 +9,7 @@ const dotenv = require('dotenv').config();
 
 const PORT = process.env.PORT || 3001;
 const app = express();
+const {listingData} = require("./public/js/listing.js")
 
 const sess = {
     secret: 'i hate bananas',
@@ -30,6 +31,11 @@ const hbs = exphbs.create({});
 app.engine("handlebars", hbs.engine)
 app.set('view engine', 'handlebars');
 
+app.get('/list', (req, res) => {
+    res.render("list", listingData)
+  });
+
+ 
 app.use(routes)
 
 sequelize.sync({ force: false }).then(() => {

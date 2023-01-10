@@ -1,0 +1,1 @@
+document.getElementById("list-item").addEventListener('click', () => alert('clicked'))
