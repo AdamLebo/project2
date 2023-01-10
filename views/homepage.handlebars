@@ -1,4 +1,3 @@
-
 <h1>Cars R Us</h1>
 {{#if loggedIn}}
 <div>
@@ -25,13 +24,9 @@
     {{#each colors}}
       <option value="{{this.value}}">{{this.label}}</option>
     {{/each}}
-
-    
   </select>
 </div>
 {{> list}}
 {{else}}
 <a href="http://localhost:3001/login">You must be logged in to view the listings</a>
 {{/if}}
-
-<script src="/Develop/public/js/dropdown.js"></script>

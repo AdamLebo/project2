@@ -31,6 +31,11 @@ router.get('/cars', async (req, res) => {
             });
             }
             });
+const {listingData} = require("../public/js/listing")
+
+//get all cars for homepage
+router.get('/', async (req, res) => {
+    try{
         const dbCarData = await Car.findAll({
             include: [
                 {

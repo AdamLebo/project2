@@ -7,7 +7,7 @@ const carData = [
         year: 2016,
         miles:60000 ,
         color: 'red',
-        img:"https://images.hgmsites.net/hug/2016-chevrolet-impala_100517787_h.jpg"
+        img:"https://images.hgmsites.net/hug/2016-chevrolet-impala_100517787_h.jpg",
     },
     {
         make: 'Dodge',
@@ -16,8 +16,6 @@ const carData = [
         miles:14000 , 
         color: 'black',
         img:"https://listings-prod.tcimg.net/listings/32449/04/98/2C3CDZJG7MH649804/CPSBDLIHRK73ILHF7A4RYQ3T7U-cr-540.jpg",
-
-
     },
     {
         make: 'Ford',
